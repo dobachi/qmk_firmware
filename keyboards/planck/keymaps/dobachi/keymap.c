@@ -153,9 +153,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Adjust (Lower + Raise)
  * ,-----------------------------------------------------------------------------------.
- * |      | Reset|      |UP    |      |      |      |      |PG UP |      |      |  Del |
+ * |      | Reset|      |PGUP  |      |      |      |      | UP   |      |      |  Del |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |LEFT  |DOWN  |RIGHT |AGnorm|INS   |HOME  |PG DN |END   |      |      |
+ * |      |      |HOME  |PGDN  |END   |AGnorm|INS   |LEFT  | DOWN |RIGHT |      |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |Voice-|Voice+|Mus on|Musoff|MIDIon|MIDIof|DEL   |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -163,8 +163,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = {
-  {_______, RESET,   DEBUG,   KC_UP, _______, _______, _______, _______, KC_PGUP,_______, _______, KC_DEL },
-  {_______, _______, KC_LEFT,  KC_DOWN, KC_RGHT,  AG_NORM, KC_INS, KC_HOME,  KC_PGDN, KC_END,  PLOVER,  _______},
+  {_______, RESET,   DEBUG,   KC_PGUP, _______, _______, _______, _______, KC_UP,_______, _______, KC_DEL },
+  {_______, _______, KC_HOME,  KC_PGDN, KC_END,  AG_NORM, KC_INS, KC_LEFT,  KC_DOWN, KC_RGHT,  PLOVER,  _______},
   {_______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  KC_DEL, _______, _______, _______, _______},
   {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
 }
