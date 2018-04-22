@@ -153,7 +153,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Adjust (Lower + Raise)
  * ,-----------------------------------------------------------------------------------.
- * |      | Reset|      |Up    |      |      |      |JIS \ | PrSc |ScLk  |      |  Del |
+ * |      | Reset|      |Up    |      |      |Pause |JIS \ | PrSc |ScLk  |      |  Del |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |      |      |Left  |Down  |Right |AGnorm|      |Ins   | Home |PGUP  |      |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -163,7 +163,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = {
-  {_______, RESET,   DEBUG,   KC_UP, _______, _______, _______, KC_INT3, KC_PSCR, KC_SLCK, _______, KC_DEL },
+  {_______, RESET,   DEBUG,   KC_UP, _______, _______, KC_PAUSE, KC_INT3, KC_PSCR, KC_SLCK, _______, KC_DEL },
   {_______, _______, KC_LEFT,  KC_DOWN, KC_RGHT,  AG_NORM, _______, KC_INS,  KC_HOME, KC_PGUP,  PLOVER,  _______},
   {_______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  KC_DEL, KC_END, KC_PGDN, _______, _______},
   {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
