@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
    * | Shift|   Z  |   X  |   C  |   V  |   B  |             |   N  |   M  |   ,  |   .  |   /  |Enter |
    * |------+------+------+------+------+------+-------------+------+------+------+------+------+------|
-   * |Adjust| Esc  | Alt  | GUI  | EISU |Lower |Space |Space |Raise | KANA | Left | Down |  Up  |Right |
+   * |Esc   |Adjust| GUI  | Alt  | Lower|Space |EISU |KANA   |Shift | Raise| Left | Down |  Up  |Right |
    * `-------------------------------------------------------------------------------------------------'
    */
 
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                      KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
       KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                      KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
       KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                      KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT , \
-      ADJUST,  KC_ESC,  KC_LALT, KC_LGUI, EISU,    LOWER,   KC_SPC,  KC_SPC,  RAISE,   KANA,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
+      KC_ESC, ADJUST,  KC_LALT ,KC_LGUI,  LOWER,   KC_SPC,   EISU,  KANA,  KC_RSFT,    RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
       ),
   /* Colemak
    * ,-----------------------------------------.             ,-----------------------------------------.
@@ -151,19 +151,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Adjust (Lower + Raise)
    * ,-----------------------------------------.             ,-----------------------------------------.
-   * |      | Reset|      |      |      |      |             |      |      |      |      |      |      |
+   * |      | Reset|      |Up    |      |      |             |Pause |JIS \ |PrSc  |ScLk  |      |Del   |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * |      |Aud on|Audoff|MU TOG|MU MOD| Mac  |             | Win  |Qwerty|Colemk|Dvorak|      |      |
+   * |      |      |Left  |Down  |Right | Mac  |             | Win  |Ins   |Home  |PGUP  |      |      |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * |      |CK TOG|CK RST| CK UP|CK DWN|      |             |      |      |RGB ON| HUE+ | SAT+ | VAL+ |
+   * |      |CK TOG|CK RST| CK UP|CK DWN|      |             |      |Del   |End   |PGDN  | SAT+ | VAL+ |
    * |------+------+------+------+------+------+-------------+------+------+------+------+------+------|
    * |      |      |      |      |      |      |      |      |      |      | MODE | HUE- | SAT- | VAL- |
    * `-------------------------------------------------------------------------------------------------'
    */
   [_ADJUST] =  LAYOUT( \
-      _______, RESET,   _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______, \
-      _______, AU_ON,   AU_OFF,  MU_TOG,  MU_MOD,  AG_NORM,                   AG_SWAP, QWERTY,  COLEMAK, DVORAK,  _______, _______, \
-      _______, CK_TOGG, CK_RST,  CK_UP,   CK_DOWN, _______,                   _______, _______, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, \
+      _______, RESET,   _______, KC_UP,   _______, _______,                   _______, KC_INT3, KC_PSCR, KC_SLCK, _______, KC_DEL , \
+      _______, _______, KC_LEFT, KC_DOWN, KC_RGHT,  AG_NORM,                  AG_SWAP, KC_INS,  KC_HOME, KC_PGUP, _______, _______, \
+      _______, CK_TOGG, CK_RST,  CK_UP,   CK_DOWN, _______,                   _______, KC_DEL , KC_END , KC_PGDN,RGB_SAI, RGB_VAI, \
       _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD \
       )
 };
