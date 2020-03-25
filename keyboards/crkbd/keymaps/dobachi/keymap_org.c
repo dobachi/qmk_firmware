@@ -73,11 +73,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-      TILD ,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSPC,\
+        TAB,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      LCTL ,     1,     2,     3,     4,     5,                   MINS,   EQL,  LCBR,  RCBR,  PIPE,   GRV,\
+      LCTL ,    F1,    F2,    F3,    F4,    F5,                  F6   , F7   ,  F8  , F9   , F10  , XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      SFTES,     6,     7,     8,     9,     0,                   COMM,   DOT,  LBRC,  RBRC,  BSLS,  ENT ,\
+      SFTES, XXXXX, LEFT , DOWN , UP   , RGHT ,                  F11  , F12  , COMM , DOT  , SLSH ,   ENT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   LALT , LOWER,   SPC,    RSFT , RAISE, LGUI  \
                               //`--------------------'  `--------------------'
@@ -85,11 +85,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        TAB, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   HOME, PGDN , PGUP , END  , XXXXX,  BSPC,\
+      TILD ,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      LCTL ,    F1,    F2,    F3,    F4,    F5,                  LEFT , DOWN , UP   , RGHT , XXXXX, XXXXX,\
+      LCTL , XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   MINS,   EQL,  LCBR,  RCBR,  PIPE,   GRV,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      SFTES,    F6,    F7,    F8,    F9,   F10,                  F11  , F12  , PSCR , SLCK , XXXXX,   ENT,\
+      SFTES, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   UNDS,  PLUS,  LBRC,  RBRC,  BSLS,  ENT ,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   LALT , LOWER,   SPC,    RSFT , RAISE, LGUI  \
                               //`--------------------'  `--------------------'
