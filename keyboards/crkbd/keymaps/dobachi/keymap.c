@@ -99,9 +99,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------.                ,-----------------------------------------.
         RST,  LRST, XXXXX,    UP, XXXXX, XXXXX,                  XXXXX, INT3 , PSCR , SLCK , XXXXX, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LTOG,  LHUI,  LEFT,  DOWN, RGHT , XXXXX,                  XXXXX, INS  , HOME , PGUP , XXXXX, XXXXX,\
+       MUTE,  VOLU,  LEFT,  DOWN, RGHT , XXXXX,                  XXXXX, INS  , HOME , PGUP , XXXXX, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LMOD,  LHUD,  LSAD,  LVAD, XXXXX, XXXXX,                  XXXXX, DEL  , END  , PGDN , XXXXX, XXXXX,\
+       LMOD,  VOLD,  LSAD,  LVAD, XXXXX, XXXXX,                  XXXXX, DEL  , END  , PGDN , XXXXX, XXXXX,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   LALT , LOWER,   SPC,     RSFT, RAISE, RGUI  \
                               //`--------------------'  `--------------------'
